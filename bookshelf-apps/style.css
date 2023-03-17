@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+header {
+    background: deeppink;
+    padding: 20px;
+    color: white;
+}
+h1 {
+    text-align: center;
+    font-weight:bolder;
+}
+
+.wrapper>.h2{
+    font-weight:lighter;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: whitesmoke;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.check-read {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.check-read input {
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+input[type=text],
+input[type=number] {
+    border: 2px solid deeppink;
+    border-radius: 7px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
+.btn-submit {
+    width: fit-content;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: deeppink;
+    color: white;
+    font-size: 20px;
+    align-self: flex-end;
+    border: 2px solid white;
+}
+
+input[type=text],
+input[type=date],
+.btn-submit:focus {
+    outline: none;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.check-button {
+    background-color: green;
+    background-size: contain;
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    border: none; 
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+}
+
+.trash-button {
+    background-color: red;
+    border-radius: 10px;
+    background-size: contain;
+    width: 60px;
+    height: 40px;
+    margin-left: 16px;
+    border: none;
+    color: white;
+    font-size: medium;
+}
+
+.undo-button {
+    background-color: green;
+    background-size: contain;
+    width: 150px;
+    height: 40px;
+    margin-left: auto;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.form-search .form-title-search {
+    float: left;
+    width: 80%;
+}
+
+.form-search .btn-search {
+    float: right;
+    width: 18%;
+}
+
+.btn-search {
+    width: fit-content;
+    border-radius: 12px;
+    padding: 12px 24px;
+    color: white;
+    font-size: 20px;
+    margin-top: auto;
+    align-self: center;
+    background-color: deeppink;
+    border: 2px solid white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+    .wrapper .container {
+        width: 100%;
+    }
+    .list-item {
+        width: 90%;
+    }
+    .form {
+        width: 100%;
+    }
+}

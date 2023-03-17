@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Bookshelf Apps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Bookshelf Apps</h1>
+  </header>
+  <div class="wrapper">
+    <div class="container" id="add-book">
+      <h2 class="container-header text-center" id="container-h2">Input New Book</h2>
+      <form class="form" action="#" id="form">
+        <input type="hidden" id="idBook" name="idBook" />
+        <div class="form-group form-title">
+          <label for="title">Judul</label>
+          <input type="text" id="title" name="title" required />
+        </div>
+        <div class="form-group form-title">
+          <label for="author">Penulis</label>
+          <input type="text" id="author" name="author" required />
+        </div>
+        <div class="form-group form-title">
+          <label for="year">Tahun</label>
+          <input type="number" id="year" name="year" required />
+        </div>
+        <div class="form-group form-title">
+          <label for="inputBookIsComplete" class="check-read">Finished Read
+            <input id="inputBookIsComplete" type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <input type="submit" value="Submit" name="Submit" class="btn-submit" id="submit" />
+      </form>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header text-center">Enter Book Title here to Search!</h2>
+      <form class="form-search" action="#" id="form-search">
+        <div class="form-group form-title-search">
+          <input type="text" id="search" name="search" />
+        </div>
+        <input type="submit" id="btn-search" value="Search" name="SubmitSearch" placeholder="masukkan kata kunci"
+          class="btn-search" />
+      </form>
+      <div class="clear"></div>
+      <div class="list-item" id="searchSection"></div>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header">Unread Books</h2>
+      <div class="list-item" id="books"></div>
+    </div>
+
+    <div class="container">
+      <h2 class="container-header">Read Books</h2>
+      <div class="list-item" id="completed-books"></div>
+    </div>
+  </div>
+
+  <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
